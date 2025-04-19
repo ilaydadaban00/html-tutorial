@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2</title>
+</head>
+<body>
+    <h1>Quiz 2</h1>
+    <!--Denklem Oluşturma-->
+    <h2>Denklem</h2>
+    <p>a <sub>0</sub> +y <sup>(n)</sup>...=0</p> <!--sub alta doğru yazar  sup üste doğru yazar-->
+    <hr>
+
+    <!--Liste Oluşturma-->
+    <h2>Yazılım Dilleri</h2>
+    <ul style="list-style-type: none;"> <!--listenin noktalarını siler boş olarak gösterir-->
+        <li><b>Front-end Yazılım Geliştirme</b>
+            <ol type="i"> <!--küçük roma rakamıyla yazar -->
+                <li>PHP</li>
+                <li>JAVA</li>
+                <li>C#</li>
+                <li>Pthon</li>
+            </ol>
+        </li>
+        <li><b>Back-end Yazılım Geliştirme</b>
+            <ol reversed type="a"> <!--tersten küçük a olarak yazar c b a olarak-->
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+
+    <!--Tablo Oluşturma-->
+    <h2>Tablo</h2>
+    <table border="2" width="400px"> <!--border tablo olusturur width genişlik-->
+        <caption><i><u>Sınıf Başarısı</u></i></caption> <!--caption tablonun üstüne Sınıf Başarısı yazar-->
+        <tr>
+           <th rowspan="2"></th> <!--rowspan alt alta hücre birleştirir-->
+           <th colspan="2">Ortalama</th> <!--colspan yan yana hücre birleştirir-->
+           <th rowspan="2">Toplam Öğrenci</th>
+        </tr>
+        <tr>
+            <th>Geçen</th> <!--th Başlık hücresi-->
+            <th>Kalan</th>
+        </tr>
+        <tr>
+            <th>Web</th>
+            <td><mark>25</mark></td> <!--mark Altı çizili yazar-->
+            <td><del>5</del></td> <!--del Üstünü çizer-->
+            <td rowspan="2">30</td>
+        </tr>
+        <tr>
+            <th>Yapay Zeka</th>
+            <td><mark>20</mark></td>
+            <td><del>10</del></td>
+        </tr>
+    </table>
+</body>
+</html>
