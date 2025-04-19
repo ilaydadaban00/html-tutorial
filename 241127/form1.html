@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Uygulamaları</title>
+</head>
+<body>
+    <h1>select ve fieldset kullanımı</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label for="isim">İsim</label>
+        <input type="text" name="isim" id="isim" placeholder="ad"><br><br>
+        <label for="soyad">Soyad</label>
+        <input type="text" name="soyad" id="soyad" placeholder="soyad"><br><br>
+        <!--input türlerinden radio kullanıldığında name değerleri aynı id değerleri farklı olmalıdır-->
+        <label for="cinsiyet">Cinsiyet</label><br>
+        <input type="radio" name="cinsiyet" id="kiz" value="Kız">
+        <label for="kiz">Kız</label>
+        <input type="radio" name="cinsiyet" id="erkek" value="Erkek">
+        <label for="erkek">Erkek</label><br><br>
+        <label for="sehir">Yaşadığın Şehir</label>
+        <input type="text" name="sehir" id="sehir"><br><br>
+        <label for="dt">Doğum Tarihi</label>
+        <input type="date" name="dt" id="dt" value="2024-01-01">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Eğitim Bilgileri</legend>
+            <label for="okul">Okul</label>
+            <input type="text" id="okul" name="okul">
+            <br><br>
+            <label for="sinif">Sınıf</label>
+            <input type="text" id="sinif" name="sinif">
+            <br><br>
+            <label for="bolum">Bölümün</label>
+            <select name="bolum" id="bolum">
+                <option value="bilisim">Bilişim</option>
+                <option value="moda">Moda</option>
+                <option value="cocuk">Çocuk</option>
+                <option value="grafik">Grafik</option>
+            </select>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Ek Bilgiler</legend>
+            <!--textarea etiketi çok satırlı veri girişi için kullanılır-->
+            <!--textarea için cols tek satırda bulunan karakter sayısını rows ise satır sayısını belirtir-->
+            <textarea name="bilgi" id="bilgi" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid cum et, repellat eveniet nobis! Quae tenetur maxime cumque ullam nemo vitae voluptates libero est.Eos quaerat repellendus laudantium cum.</textarea>
+            <br>
+            <input type="checkbox" name="kabul" id="kabul">
+            <label for="kabul">Bilgileri Kabul Et</label>
+            <input type="checkbox" name="cerez" id="cerez">
+            <label for="cerez">Çerezleri Kabul Et</label>
+        </fieldset><br>
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+    </form>
+</body>
+</html>
