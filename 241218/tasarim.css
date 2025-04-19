@@ -1,0 +1,76 @@
+/* genel biçimlendirme */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* genişlik ve yüksekliğe border ve padding dahil*/
+}
+body{
+    font-family: "Raleway", serif;
+    font-weight: 200;
+}
+.ayrac{
+    margin: 10px auto;
+    border-top: 1px solid #fff;
+    border-bottom:1px solid #005670;
+}
+
+/* header bölümü */
+header{
+    background-color: #005670;
+    color: #fff;
+    padding: 30px 0; /* iç boşluk */
+    text-align: center; /* yazıyı ortalama */
+}
+header ul{
+    display: flex; /* ul'nin içindeki nesneler esnek olur */
+    justify-content: center; /* içeriği ortaya hizalama */
+    list-style: none; /* listedeki noktaların kaybolması için */
+}
+#menu a{
+    display: block;
+    color: #fff;
+    text-decoration: none; /* bağlantıların altındaki çizgiyi kaldırdı ana sayfa, hakkımızda, iletişim*/
+    padding: 15px 8px 0px 8px;
+}
+
+/* main bölümü*/
+main{
+    display: flex;
+    gap: 10px; /* içindeki nesneler kendi arasında boşluk bırakır */
+    margin: 20px; /* dış boşluk */
+    border: 1px solid #666; /* border çerçeve yapar ve solid rengini seçer */
+    padding: 15px; /* çerçeveden iç boş bırakacak */
+    border-radius: 8px; /* çerçevenin köşelerini ovalleştiriyor */
+}
+main .content{
+    flex: 9;
+    background-color: #8db8ca;
+    padding: 16px;
+    border: 1px solid #666;
+    border-radius: 8px;
+}
+main aside{
+    flex: 3; /* orantısal olarak ne kadar esneyeceğini gösteriyor*/
+    background-color: #8db8ca;
+    padding: 16px;
+    border: 1px solid #666;
+    border-radius: 8px;
+}
+section h2{
+    margin-bottom: 5px;
+}
+aside ul{
+    list-style: none;
+}
+aside a{
+    color: #222;
+    line-height: 150%;
+}
+
+/* footer bölümü*/
+footer{
+    background-color: #005670;
+    color: #fff;
+    padding: 30px 0; /* iç boşluk */
+    text-align: center; /* yazıyı ortalama */  
+}
